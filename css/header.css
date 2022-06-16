@@ -1,0 +1,143 @@
+.cart-content{
+    background-color: #FFF;
+}
+.cart-content-into{
+    background-color: #FFF;
+    padding: 0.1rem;
+    padding-right: 0.3rem;
+}
+.logo-menu{
+    font-size: 3rem;
+    color: #F85555;
+    font-weight: 400;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+#cart-icon  {
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-left: 40%;
+    opacity: 20%;
+    margin-top: 10%;
+}
+#heart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
+    margin-left: 40%;
+    opacity: 20%;
+    margin-top: 10%;
+}
+#user-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
+    margin-left: 40%;
+    opacity: 20%;
+    margin-top: 10%;
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    max-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    transition: 0.3s;
+    background-color: #FFF;
+    overflow-y: auto;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+     
+}
+
+.cart-card {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-card {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color) ;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1px;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 6.9rem;
+    opacity: 20%;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #F85555;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: white;
+    color: #F85555;
+    border-style: solid;
+    border-color: #F85555;
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}

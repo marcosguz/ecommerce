@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap" rel="stylesheet"> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+	<link rel="stylesheet" href="css/header.css">
+
+	<link rel="stylesheet" href="css/search.css">
+
+    <title>Tienda Academlo</title>
+  </head>
+  <body>
+    <!-- Menu -->
+   <div class="container-fluid">
+		<div class="row menu border-bottom" >
+			<div class="col nav-logo border-end">
+				<h1 class="logo-menu">e-commerce</h1>
+			</div>
+			<div class="col nav-menu">
+				<div class="row row-menu">
+					<div class="col border-end  menu-login">
+						<a href="#" class="login" >
+							<i class='bx bx-user'id="user-icon" ></i>
+						</a>
+					</div>
+					<div class="col border-end menu-heart">
+						<a href="#" class="heart">
+							<i class='bx bx-heart' id="heart-icon"></i>
+						</a>
+					</div>
+					<div class="col border-end menu-car">
+						<i class='bx bx-cart' id="cart-icon"></i>
+						</a>
+					</div>
+				</div>
+				<!-- CARRITO DE COMPRAS -->
+				<div class="cart" style="z-index: 1;">
+					<div class="cart-content-into" >
+						<h2 class="cart-title">
+							Carrito de Compras
+						</h2>
+
+						<div class="cart-content" id="cntr-carrito">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+   </div>
+
+    <!-- Contenido -->
+    <div class="container-fluid mt-5">
+		<div class="row">
+		  <!-- Categorías -->
+		  <div class="col-3">
+			<div class="col-12 mb-4">
+			  <h5 class="">Home</h5>
+			</div>
+			<div class="col-12">
+				<div class="col-12 border-bottom mb-3">
+					<h5 class="">Precio</h5>			  
+				</div>
+				<div class="row">
+					<div class="col-5">
+						<select class="form-select" style="border-radius: 0;">
+							<option selected>De:</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					</div>
+					<div class="col-5">
+						<select class="form-select" style="border-radius: 0;">
+							<option selected>Hasta:</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mt-4">
+				<div class="col-12 border-bottom mb-2">
+					<h5 class="mt-4">Categoría</h5>
+				</div>
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-SmartTv"
+				  value="SmartTv_checkbox"
+				/>
+				Smart TV</label
+			  ><br />
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-Computadoras"
+				  value="Computadoras_checkbox"
+				/>
+				Computadoras</label
+			  ><br />
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-Celulares"
+				  value="Celulares_checkbox"
+				/>
+				Celulares</label
+			  ><br />
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-Tablets"
+				  value="Tablets_checkbox"
+				/>
+				Tablets</label
+			  ><br />
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-Gadgets"
+				  value="Gadgets_checkbox"
+				/>
+				Gadgets</label
+			  ><br />
+			  <label
+				><input type="checkbox" id="cbox-Audio" value="Audio_checkbox" />
+				Audio</label
+			  ><br />
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-Gaming"
+				  value="Gaming_checkbox"
+				/>
+				Gaming</label
+			  ><br />
+			</div>
+			<div class="col-12">
+						  <div class="col-12 border-bottom mt-4 mb-2">
+							  <h5 class="">Dispositivo</h5>
+						  </div>
+			  <label
+				><input
+				  type="checkbox"
+				  id="cbox-Android"
+				  value="Android_checkbox"
+				/>
+				Android</label
+			  ><br />
+			  <label
+				><input type="checkbox" id="cbox-Apple" value="Apple_checkbox" />
+				Apple</label
+			  ><br />
+			</div>
+			<div class="col-12">
+						  <div class="col-12 border-bottom mt-4 mb-2">
+							  <h5 class="">Ram</h5>
+						  </div>
+			  <label
+				><input type="checkbox" id="cbox-12GB" value="12GB_checkbox" />
+				12GB</label
+			  ><br />
+			  <label
+				><input type="checkbox" id="cbox-8GB" value="8GB_checkbox" />
+				8GB</label
+			  ><br />
+			  <label
+				><input type="checkbox" id="cbox-6GB" value="6GB_checkbox" />
+				6GB</label
+			  ><br />
+			  <label
+				><input type="checkbox" id="cbox-4GB" value="4GB_checkbox"/>
+				4GB</label
+			  ><br />
+			</div>
+		  </div>
+  
+		  <!-- Buscador y lista de productos -->
+		  <div class="col-9">
+			<div class="row">
+			  <div class="col-9">
+				<!-- Buscador -->
+				<div class="input-group" 
+				onsubmit="event.preventDefault(), filterByBrand()">
+				  <div class="form-outline input">
+					<input
+					  type="search"
+					  id="brand-filter"
+					  class="form-control input-input"
+					  placeholder="¿Qué producto estas buscando?"
+					/>
+				  </div>
+				  <button class="input-search">
+					<img src="img/search 1.svg" alt="" />
+				  </button>
+				</div>
+			  </div>
+  
+			  <!-- Lista de productos -->
+			  <div class="col-3">
+				<select class="form-select select">
+				  <option selected>Marca</option>
+				  <option value="1">Samsung</option>
+				</select>
+			  </div>
+			</div>
+  
+			<!-- Productos -->
+			<div class="row mt-4 mb-3">
+			  <h5>Total Productos: <span id="totales" style="color: #F85555;"></span></h5>
+			</div>
+  
+			<!-- Catalogo de productos -->
+			<div class="row order-bottom d-flex" id="productscontainer">
+			  <div class="col-9 order-bottom d-flex">
+				<div class="col-6 order-bottom d-flex"></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="modal" tabindex="-1" id="pagoModal">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Tienda Academlo</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p>Tu compra se ha realizado con exito..!!!</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn-buy" data-bs-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<footer class="text-center text-lg-start border-top">
+		
+		<div class="container p-4 pb-0">
+		  	<form action="">
+
+				<div class="row">
+				
+					<div class="col-auto mb-4 mb-md-0">
+						<p class="pt-2">
+						<strong>Sign up for our ecomerce</strong>
+						</p>
+					</div>
+			
+					<div class="col-md-5 col-12 mb-4 mb-md-0">
+						<!-- Email input -->
+						<div class="form-outline mb-4">
+						<input type="email" id="form5Example25" class="form-control" />
+						<label class="form-label" for="form5Example25">Email address</label>
+						</div>
+					</div>
+				
+					<div class="col-auto mb-4 mb-md-0">
+						<button type="submit" class="btn" style="background-color: #F85555; color: white; border-radius: 0;">
+						Subscribe
+						</button>
+					</div>
+
+				</div>
+
+		 	 </form>
+		</div>
+
+		<div class="text-center p-3" style="background-color: #F85555; color: white;">
+		  © 2020 Copyright:
+		  <a href="https://www.academlo.com/" style="color: white; text-decoration: none;">Academlo.com</a>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+    <script src="/js/script.js" type="module"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/data.js"></script>
+  </body>
+</html>

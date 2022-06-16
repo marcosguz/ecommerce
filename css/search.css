@@ -1,0 +1,41 @@
+.input{
+    width: 80%;
+}
+
+.input-input{
+    border: 1px solid #C7C7C7;
+    border-radius: 0;
+}
+
+.input-input::placeholder{
+    color: #DCD9D9;
+}
+
+.input-search{
+    background-color: #F85555;
+    border: none;
+    border-radius: 0;
+    width: 8%;
+    display: flex;
+    text-align: center;
+}
+
+.input-search img{
+    display:block;
+    height: 1.5rem;
+    margin:auto;
+}
+
+.select{
+    border: 1px solid #C7C7C7;
+    border-radius: 0;
+    color: #4F4F4F;
+    font-weight: 500;
+    width: 70%;
+}
+
+
+
+.input-search img{
+    color: #DCD9D9;
+}

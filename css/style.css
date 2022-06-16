@@ -1,0 +1,39 @@
+.cart-product-title{
+    margin-top: 20%;
+}
+.textmarca{
+    font-size: 15px;
+    opacity: 50%;
+    margin: 0%;
+}
+.cart-model-title{
+    margin-top: -8%;
+}
+.textmodelo{
+    font-weight: bold;
+}
+.textprecio{
+    font-size: 15px;
+    opacity: 50%;
+    margin: 0%;
+}
+.textnumprecio{
+    font-weight: bold;
+}
+.divbuttoncarrito{
+    background: #F85555;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.2rem;
+    margin-left: 3.5rem;
+    cursor: pointer;
+}
+.divbuttoncarrito img {
+    height: 50%;
+    margin-top: 0.8rem;
+    text-align: center;
+    
+  }
